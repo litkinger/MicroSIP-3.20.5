@@ -144,7 +144,7 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>opus.lib;Wtsapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\lib\;..\third_party\lib\;..\third_party\openssl\$(Platform)\lib\;..\third_party\ipp\$(Platform)\;..\third_party\opus\$(Platform)\;..\third_party\silk\$(Platform)\$(Configuration)\;..\third_party\ffmpeg\$(Platform)\;..\third_party\vpx\$(Platform)\;..\third_party\sdl\$(Platform)\;..\third_party\opencore-amrnb\$(Platform)\;..\third_party\vo-amrwbenc\$(Platform)\;..\third_party\opencore-amrwb\$(Platform)\;..\third_party\hid\$(Platform)\;..\third_party\opus\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib\;..\third_party\lib\;..\third_party\openssl\$(Platform)\lib\;..\third_party\ipp\$(Platform)\;..\third_party\opus\$(Platform)\;..\third_party\silk\$(Platform)\$(Configuration)\;..\third_party\ffmpeg\$(Platform)\;..\third_party\vpx\$(Platform)\;..\third_party\sdl\$(Platform)\;..\third_party\opencore-amrnb\$(Platform)\;..\third_party\vo-amrwbenc\$(Platform)\;..\third_party\opencore-amrwb\$(Platform)\;..\third_party\hid\$(Platform)\;..\third_party\opus\Win32;..\third_party\ffmpeg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SubSystem>Windows</SubSystem>
       <AdditionalOptions>/OPT:NOLBR %(AdditionalOptions)</AdditionalOptions>
     </Link>
@@ -193,7 +193,7 @@
       <MkTypLibCompatible>false</MkTypLibCompatible>
     </Midl>
     <ClCompile>
-      <AdditionalIncludeDirectories>lib;lib\jsoncpp\json;..\pjlib\include;..\pjsip\include;..\pjmedia\include;..\pjnath\include;..\pjlib-util\include;..\third_party\sdl\include;..\third_party\openssl\Win32\include;..\third_party\hid;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>lib;lib\jsoncpp\json;..\pjproject\pjlib\include;..\pjproject\pjsip\include;..\pjproject\pjmedia\include;..\pjproject\pjnath\include;..\pjproject\pjlib-util\include;..\pjproject\third_party\sdl\include;..\pjproject\third_party\openssl\Win32\include;..\pjproject\third_party\hid;.;..\third_party\sdl\include;..\third_party\openssl\Win32\include;..\third_party\hid;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -209,7 +209,7 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>opus.lib;Wtsapi32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>..\lib\;..\third_party\lib\;..\third_party\openssl\$(Platform)\lib\;..\third_party\ipp\$(Platform)\;..\third_party\opus\$(Platform)\;..\third_party\silk\$(Platform)\$(Configuration)\;..\third_party\ffmpeg\$(Platform)\;..\third_party\vpx\$(Platform)\;..\third_party\sdl\$(Platform)\;..\third_party\opencore-amrnb\$(Platform)\;..\third_party\vo-amrwbenc\$(Platform)\;..\third_party\opencore-amrwb\$(Platform)\;..\third_party\hid\$(Platform)\;..\third_party\opus\Win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>..\lib\;..\third_party\lib\;..\third_party\openssl\$(Platform)\lib\;..\third_party\ipp\$(Platform)\;..\third_party\opus\$(Platform)\;..\third_party\silk\$(Platform)\$(Configuration)\;..\third_party\ffmpeg\$(Platform)\;..\third_party\vpx\$(Platform)\;..\third_party\sdl\$(Platform)\;..\third_party\opencore-amrnb\$(Platform)\;..\third_party\vo-amrwbenc\$(Platform)\;..\third_party\opencore-amrwb\$(Platform)\;..\third_party\hid\$(Platform)\;..\third_party\opus\Win32;..\third_party\ffmpeg\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <SubSystem>Windows</SubSystem>
